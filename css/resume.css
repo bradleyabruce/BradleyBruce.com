@@ -39,16 +39,19 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
-}
-
-h2 {
   font-size: 3.5rem;
 }
 
+h2 {
+  font-size: 2.75rem;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+
+h4 {
+     font-size: 1.25rem;
 }
 
 .subheading {
@@ -59,17 +62,34 @@ h3 {
 }
 
 .social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 2rem;
+     display: flex;
+     text-decoration: none;
+     background-color: #495057;
+     color: #fff !important;
+     border-radius: 10px;
+     width: 100%;
+     padding-left: 20px;
+     padding-right: 20px;
 }
+
+@media (min-width: 576px) {
+     .social-icons a {
+          width: 400px;
+     }
+}
+
+.social-icons span {
+     align-content: center;    
+}
+
+.social-icons i {
+     display: inline-block;
+     height: 3.5rem;
+     text-align: center;
+     font-size: 1.5rem;
+     line-height: 3.5rem;
+     margin-right: 1rem;
+   }
 
 .social-icons a:hover {
   background-color: #002966;
@@ -149,8 +169,8 @@ h3 {
 }
 
 section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
   border-bottom: solid;
   border-bottom-width: 14px;
   border-bottom-color: #002966;
@@ -168,13 +188,6 @@ section.resume-section .resume-item .resume-date {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
-  }
-}
-
-@media (min-width: 768px/*992px*/) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
   }
 }
 
